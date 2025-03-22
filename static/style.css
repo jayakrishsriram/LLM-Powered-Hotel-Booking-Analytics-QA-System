@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('hotel.jpg'); /* Add this line */
+    background-size: cover; /* Add this line */
+    background-position: center; /* Add this line */
+
+}
+
+.chat-container {
+    width: 1000px;
+    height: 600px;
+    background: linear-gradient(to right, #b6e2da, #ced6f9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: #660240;
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 15px;
+    max-width: 55%;
+}
+
+.message p {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.user {
+    margin-left: auto;
+}
+
+.user p {
+    background-color: #c6c7c8;
+    color: black;
+}
+
+.bot {
+    margin-right: auto;
+}
+
+.bot p {
+    background-color: #e9ecef;
+    color: black;
+}
+
+.chat-input {
+    padding: 20px;
+    border-top: 1px solid #dee2e6;
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.typing-indicator {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
